@@ -1,19 +1,19 @@
-import Header from './components/Header'
-// import Home from './Home';
 // import Normativas from './Normativas';
-// import Tienda from './Tienda';
-import { BrowserRouter, Route , Routes} from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css'
+import Home from './components/Home';
+import Shop from './components/Shop';
+import NavBar from './components/NavBar';
 
 function App() {
- 
-  return (    
+
+  return (
     <BrowserRouter>
-      <Header />
+      <NavBar />
       <Routes>
-        {/* <Route path="/" exact component={Home} /> */}
-        {/* <Route path="/normativas" component={Normativas} /> */}
-        {/* <Route path="/tienda" component={Tienda} /> */}
+        <Route path="/home" element={<Home />} />
+        {/* <Route path="/rules" component={<Rules />} /> */}
+        <Route path="/shop" element={<Shop />} />
       </Routes>
     </BrowserRouter>
   )

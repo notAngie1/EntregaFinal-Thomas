@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import NavBar from "./NavBar"
 
 const Header = () => {
-    const [cursorX, setCursorX] = useState(0);
-    const [cursorY, setCursorY] = useState(0);
+    const [cursorX, setCursorX] = useState(150);
+    const [cursorY, setCursorY] = useState(200);
     const [scrollY, setScrollY] = useState(0);
     const headerRef = useRef(null);
 
@@ -26,8 +25,7 @@ const Header = () => {
 
     return (
         <header className="header" ref={headerRef}>
-            <NavBar />
-            <div className="header-background" style={{ transform: `translateY(-${scrollY * 0.1}px)` }} />
+            <div className="header-background" style={{ transform: `translateY(-${scrollY * 0.01}px)` }} />
             <div className="header-content header-container">
                 <h1>Bienvenidos a TekyaRP</h1>
                 <p>Bienvenidos a a la pagina oficial de TekyaRP.
@@ -37,10 +35,10 @@ const Header = () => {
                     En esta pagina vas a poner encontrar el enlace para el discord, como las normativas y tienda de objetos.</p>
                 <a href="#sabermas" className="btn-1" target='blank'>Saber mas</a>
             </div>
-            <div class="container">
-                <div id="circulo" class="shape"></div>
-                <div id="circulo2" class="shape"></div>
-                <div id="circulo3" class="shape"></div>
+            <div className="container">
+                <div id="circulo" className="shape"></div>
+                <div id="circulo2" className="shape"></div>
+                <div id="circulo3" className="shape"></div>
             </div>
             <div
                 className="cursor"
@@ -50,6 +48,7 @@ const Header = () => {
                 }}
                 onMouseMove={handleMouseMove}
             />
+
         </header>
     );
 };
