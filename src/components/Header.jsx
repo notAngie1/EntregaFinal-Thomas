@@ -33,12 +33,15 @@ const Header = () => {
                     Somos un servidor de rolplay de fivem que nos enfocamos en traer entretenimiento de los usuarios y darles una mejor experiencia de juego.
                     <br />
                     En esta pagina vas a poner encontrar el enlace para el discord, como las normativas y tienda de objetos.</p>
-                <a href="#sabermas" className="btn-1" target='blank'>Saber mas</a>
+                <a href="#sabermas" className="btn-1" >Saber mas</a>
             </div>
             <div className="container">
                 <div id="circulo" className="shape"></div>
                 <div id="circulo2" className="shape"></div>
-                <div id="circulo3" className="shape"></div>
+                <div id="circulo3" className="shape">
+                 {/* <img src="../public/download.gif" alt="" /> */}
+
+                </div>
             </div>
             <div
                 className="cursor"
