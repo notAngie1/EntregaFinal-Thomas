@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "nombre": "Vip Tekya mensual",
+    "precio": 1500,
+    "imagen": "../public/8410fa458ea3dbf330b82205acde3ba3-icono-de-diamante-rubi.webp",
+    "categoria": "Vips"
+  },
+  {
+    "id": 2,
+    "nombre": "Vip Tekya permanente",
+    "precio": 5000,
+    "imagen": "../public/8410fa458ea3dbf330b82205acde3ba3-icono-de-diamante-rubi.webp",
+    "categoria": "Vips"
+  },
+  {
+    "id": 3,
+    "nombre": "Autos conce vip",
+    "precio": 2000,
+    "imagen": "../public/056a110c18e9cf64b16b0dabb87926df-coche-con-icono-de-burbujas.webp",
+    "categoria": "Autos"
+  },
+  {
+    "id": 4,
+    "nombre": "Addons",
+    "precio": 5000,
+    "imagen": "../public/056a110c18e9cf64b16b0dabb87926df-coche-con-icono-de-burbujas.webp",
+    "categoria": "Autos"
+  },
+  {
+    "id": 6,
+    "nombre": "Casa Barrios altos",
+    "precio": 5000,
+    "imagen": "../public/house_icon-icons.com_70104.png",
+    "categoria": "Casa"
+  },
+  {
+    "id": 7,
+    "nombre": "Casa paleto",
+    "precio": 3500,
+    "imagen": "../public/house_icon-icons.com_70104.png",
+    "categoria": "Casa"
+  },
+  {
+    "id": 8,
+    "nombre": "Mafia mensual",
+    "precio": 2000,
+    "imagen": "../public/mafia.webp",
+    "categoria": "Facciones"
+  },
+  {
+    "id": 9,
+    "nombre": "Mafia permanente",
+    "precio": 5000,
+    "imagen": "../public/mafia.webp",
+    "categoria": "Facciones"
+  },
+  {
+    "id": 10,
+    "nombre": "Faccion",
+    "precio": 10000,
+    "imagen": "../public/organization-5.png",
+    "categoria": "Facciones"
+  },
+  {
+    "id": 11,
+    "nombre": "Peds",
+    "precio": 5000,
+    "imagen": "../public/defe38c5cdac50ff806d2d5ab406d557-icono-de-huella-de-gato.webp",
+    "categoria": "Otros"
+  },
+  {
+    "id": 12,
+    "nombre": "Plata IC",
+    "precio": 2000,
+    "imagen": "../public/1424767.png",
+    "categoria": "Otros"
+  },
+  {
+    "id": 13,
+    "nombre": "Casa ciudad/sandy",
+    "precio": 2000,
+    "imagen": "../public/house_icon-icons.com_70104.png",
+    "categoria": "Casa"
+  }
+]

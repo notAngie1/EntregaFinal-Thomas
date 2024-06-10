@@ -134,12 +134,20 @@ h2{
 }
 
 .item {
+    display: flex;
     border-radius: 10px;
     background-color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
 }
 
 .item:hover {
     box-shadow: 0 10px 20px rgba(179, 179, 179, 0.2);
+}
+
+.productoContainer{
+    display: flex;
 }
 
 .info-producto {
@@ -162,14 +170,14 @@ h2{
     font-weight: 900;
 }
 
+#item{
+    width: 250px;
+}
+
 .item img {
     border-radius: 10px 10px 0 0;
     transition: all .5s;
 
-}
-
-.item figure {
-    overflow: hidden;
 }
 
 .item:hover img {
@@ -205,11 +213,17 @@ h2{
 }
 
 .divProductos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
 }
+
+.containerShop{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
 
 
 footer {

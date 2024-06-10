@@ -36,12 +36,10 @@ const Header = () => {
                 <a href="#sabermas" className="btn-1" >Saber mas</a>
             </div>
             <div className="container">
-                <div id="circulo" className="shape"></div>
-                <div id="circulo2" className="shape"></div>
-                <div id="circulo3" className="shape">
-                 {/* <img src="../public/download.gif" alt="" /> */}
-
-                </div>
+                <div id="circulo"><img src="../public/bloborganic.gif" alt="" /></div>
+                <div id="circulo2"><img src="../public/bloborganic.gif" alt="" /></div>
+                <div id="circulo3"><img src="../public/bloborganic.gif" alt="" /></div>
+                <div id="circulo4"><img src="../public/bloborganic.gif" alt="" /></div>
             </div>
             <div
                 className="cursor"

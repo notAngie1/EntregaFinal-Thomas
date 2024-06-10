@@ -1,7 +1,7 @@
 const Error = () => {
 
     return(
-        <div>
+        <div className="error">
             <img src="../public/error.gif" alt="Error" />
         </div>
     )
