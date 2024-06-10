@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import productos from "../productosjson.json";
+import "../Productos.css"
 
 const Producto = () => {
     const { id} = useParams()
@@ -16,8 +17,8 @@ const Producto = () => {
             <div className="productoContainer">
                 {
                     producto !== null ?
-                        <div className="item">
-                            <div id="item"><img src={producto.imagen} alt={producto.nombre} /></div>
+                        <div id="item">
+                            <div id="itemimg"><img src={producto.imagen} alt={producto.nombre} /></div>
                             <div className="info-producto">
                                 <p>{producto.nombre}</p>
                                 <p>Precio: ${producto.precio}</p>
@@ -29,6 +30,7 @@ const Producto = () => {
                             No hay datos
                         </div>
                 }
+                 
             </div>
     )
 }

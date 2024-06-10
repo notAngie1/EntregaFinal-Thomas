@@ -7,6 +7,7 @@ import Producto from './components/Producto';
 import Productos from './components/Productos';
 import Error from './components/Error';
 import Rules from './components/Rules';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <BrowserRouter>
       <NavBar />
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/rules" element={<Rules />} />
         <Route path="/shop" element={<Shop />} />
@@ -21,6 +23,7 @@ function App() {
         <Route path='/producto/:id' element={<Producto />} />
         <Route path='/*' element={<Error />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   )
 }

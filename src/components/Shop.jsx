@@ -65,11 +65,11 @@ const Shop = () => {
                                                 <br />
                                                 <p>Los reclamas via ticket de donaciones en el discord.</p>
                                             </div>
+                                            <div className="divProductos">
                                             {producto
                                                 .filter((element) => element.categoria === "Vips")
                                                 .map((element) => (
                                                     <Link to={`/producto/${element.id}${element.nombre}`} key={element.id}>
-                                                        <div className="divProductos">
                                                             <div className="container-items">
                                                                 <div className="item">
                                                                     <div><img src={element.imagen} alt={element.nombre} /></div>
@@ -77,9 +77,9 @@ const Shop = () => {
                                                                         <button className="botonComprar" data-id="1">Comprar</button></div>
                                                                 </div>
                                                             </div>
-                                                        </div>
                                                     </Link>
                                                 ))}
+                                            </div>
                                         </div>
 
                                         <div className="containerShop">
@@ -87,6 +87,7 @@ const Shop = () => {
                                                 <h1>Autos</h1>
                                                 <p>Los reclamas via ticket de donaciones en el discord.</p>
                                             </div>
+                                            <div className="divProductos">
                                             {producto
                                                 .filter((element) => element.categoria === "Autos")
                                                 .map((element) => (
@@ -94,7 +95,6 @@ const Shop = () => {
                                                         to={`/producto/${element.id}${element.nombre}`}
                                                         key={element.id}
                                                     >
-                                                        <div className="divProductos">
                                                             <div className="container-items">
                                                                 <div className="item">
                                                                     <div><img src={element.imagen} alt={element.nombre} /></div>
@@ -102,9 +102,9 @@ const Shop = () => {
                                                                         <button className="botonComprar" data-id="1"> Comprar </button></div>
                                                                 </div>
                                                             </div>
-                                                        </div>
                                                     </Link>
                                                 ))}
+                                            </div>
                                         </div>
 
                                         <div className="containerShop">
@@ -112,6 +112,7 @@ const Shop = () => {
                                                 <h1>Casa</h1>
                                                 <p>Los reclamas via ticket de donaciones en el discord.</p>
                                             </div>
+                                            <div className="divProductos">
                                             {producto
                                                 .filter((element) => element.categoria === "Casa")
                                                 .map((element) => (
@@ -119,7 +120,6 @@ const Shop = () => {
                                                         to={`/producto/${element.id}${element.nombre}`}
                                                         key={element.id}
                                                     >
-                                                        <div className="divProductos">
                                                             <div className="container-items">
                                                                 <div className="item">
                                                                     <div><img src={element.imagen} alt={element.nombre} /></div>
@@ -127,9 +127,9 @@ const Shop = () => {
                                                                         <button className="botonComprar" data-id="1"> Comprar </button></div>
                                                                 </div>
                                                             </div>
-                                                        </div>
                                                     </Link>
                                                 ))}
+                                            </div>
                                         </div>
 
                                         <div className="containerShop">
@@ -137,11 +137,11 @@ const Shop = () => {
                                                 <h1>Otros</h1>
                                                 <p>Los reclamas via ticket de donaciones en el discord.</p>
                                             </div>
+                                            <div className="divProductos">
                                             {producto
                                                 .filter((element) => element.categoria === "Otros")
                                                 .map((element) => (
                                                     <Link to={`/producto/${element.id}${element.nombre}`} key={element.id} >
-                                                        <div className="divProductos">
                                                             <div className="container-items">
                                                                 <div className="item">
                                                                     <div><img src={element.imagen} alt={element.nombre} /></div>
@@ -149,9 +149,9 @@ const Shop = () => {
                                                                         <button className="botonComprar" data-id="1"> Comprar </button></div>
                                                                 </div>
                                                             </div>
-                                                        </div>
                                                     </Link>
                                                 ))}
+                                            </div>
                                         </div>
 
                                     </div>

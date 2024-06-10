@@ -129,8 +129,6 @@ h2{
 
 .container-items {
     display: flex;
-    gap: 20px;
-    width: 50%;
 }
 
 .item {
@@ -148,6 +146,8 @@ h2{
 
 .productoContainer{
     display: flex;
+    margin: 0 0 100px 0;
+    justify-content: center;
 }
 
 .info-producto {
@@ -159,6 +159,7 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
@@ -171,13 +172,30 @@ h2{
 }
 
 #item{
+    display: flex;
+    border-radius: 10px;
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    width: 50%;
+}
+
+#itemimg{
+    display: flex;
+    justify-content: center;
     width: 250px;
+}
+
+#itemimg:hover{
+    transform: scale(1.2);
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
 }
 
 .item img {
     border-radius: 10px 10px 0 0;
     transition: all .5s;
-
 }
 
 .item:hover img {
@@ -215,7 +233,8 @@ h2{
 .divProductos{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
+    width: 50%;
+    
 }
 
 .containerShop{
@@ -225,26 +244,3 @@ align-items: center;
 }
 
 
-
-footer {
-    width: 100%;
-    position: top;
-    bottom: 0;
-    left: 0;
-    padding: 2rem 8%;
-    background-color: #1A1A1A;
-    color: #d1d1d1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.socials {
-    margin-top: 105px;
-    margin-bottom: 25px;
-}
-
-.social-icon {
-    color: #d1d1d1;
-}

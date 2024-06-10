@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 
 const Header = () => {
     const [cursorX, setCursorX] = useState(150);
-    const [cursorY, setCursorY] = useState(200);
-    const [scrollY, setScrollY] = useState(0);
+    const [cursorY, setCursorY] = useState(150);
+    const [scrollY, setScrollY] = useState(150);
     const headerRef = useRef(null);
 
     useEffect(() => {
@@ -24,7 +24,7 @@ const Header = () => {
     };
 
     return (
-        <header className="header" ref={headerRef}>
+        <header className="header" ref={headerRef} onMouseMove={handleMouseMove}>
             <div className="header-background" style={{ transform: `translateY(-${scrollY * 0.01}px)` }} />
             <div className="header-content header-container">
                 <h1>Bienvenidos a TekyaRP</h1>
@@ -41,14 +41,11 @@ const Header = () => {
                 <div id="circulo3"><img src="../public/bloborganic.gif" alt="" /></div>
                 <div id="circulo4"><img src="../public/bloborganic.gif" alt="" /></div>
             </div>
-            <div
-                className="cursor"
+            <div className="cursor"
                 style={{
-                    top: `${cursorY}px`,
-                    left: `${cursorX}px`,
-                }}
-                onMouseMove={handleMouseMove}
-            />
+                    top: `${cursorY - 100}px`,
+                    left: `${cursorX + 5}px`,
+                }}><img src="../public/bloborganic.gif" alt="" /></div>
 
         </header>
     );
