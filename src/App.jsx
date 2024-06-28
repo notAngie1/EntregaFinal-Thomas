@@ -8,10 +8,12 @@ import Productos from './components/Productos';
 import Error from './components/Error';
 import Rules from './components/Rules';
 import Footer from './components/Footer';
+import { ThemeProvider } from './contexts/ThemeContext';
 
 function App() {
 
   return (
+    <ThemeProvider>
     <BrowserRouter>
       <NavBar />
       <Routes>
@@ -25,6 +27,7 @@ function App() {
       </Routes>
       <Footer/>
     </BrowserRouter>
+    </ThemeProvider>
   )
 }
 

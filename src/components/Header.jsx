@@ -1,31 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
+import useHeaderEffects from '../hooks/useHeaderEffects';
 
 const Header = () => {
-    const [cursorX, setCursorX] = useState(150);
-    const [cursorY, setCursorY] = useState(150);
-    const [scrollY, setScrollY] = useState(150);
     const headerRef = useRef(null);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setScrollY(window.scrollY);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
-    const handleMouseMove = (event) => {
-        setCursorX(event.clientX);
-        setCursorY(event.clientY);
-    };
+    const { cursorX, cursorY, handleMouseMove } = useHeaderEffects();
 
     return (
         <header className="header" ref={headerRef} onMouseMove={handleMouseMove}>
-            <div className="header-background" style={{ transform: `translateY(-${scrollY * 0.01}px)` }} />
+            <div className="header-background" />
             <div className="header-content header-container">
                 <h1>Bienvenidos a TekyaRP</h1>
                 <p>Bienvenidos a a la pagina oficial de TekyaRP.

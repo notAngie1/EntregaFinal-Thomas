@@ -7,6 +7,7 @@ const Producto = () => {
     const { id} = useParams()
     const [producto, setProducto] = useState(null)
     const intId = parseInt(id);
+    
 
     useEffect(() => {
         const productoFind = productos.find((producto) => producto.id === intId);
@@ -14,7 +15,7 @@ const Producto = () => {
       }, [intId]);
    
     return (
-            <div className="productoContainer">
+            <div className="productoContainer" >
                 {
                     producto !== null ?
                         <div id="item">
@@ -26,11 +27,12 @@ const Producto = () => {
                                 </div>
                         </div>
                         :
+                
                         <div>
-                            No hay datos
+                           Estamos Trabajando para mostrarte los productos..
                         </div>
                 }
-                 
+
             </div>
     )
 }

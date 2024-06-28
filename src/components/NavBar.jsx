@@ -1,16 +1,27 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import '../App.css'
+import { useContext } from 'react';
+import { ThemeContext } from "../contexts/ThemeContext";
+import '../App.css';
+import "../LightTheme.css"
 
 const NavBar = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <img src="../public/tekyarp2.png" alt="" className='iconLogo'/>
+        <img src="../public/tekyarp2.png" alt="" className='iconLogo' />
         <Link className="navbar-brand" to="/Home">TekyaRP</Link>
+        <a className='themeButton' onClick={() => {
+          toggleTheme();
+          document.body.classList.toggle('light');
+        }}>
+          {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
+        </a>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-          <li className="nav-item">
+            <li className="nav-item">
               <Link className="nav-link" to="/home">Inicio</Link>
             </li>
             <li className="nav-item">
@@ -22,11 +33,9 @@ const NavBar = () => {
           </ul>
         </div>
         <button className='carritoButton'>
-            <span className='carritoIcon'></span>
+          <span className='carritoIcon'></span>
         </button>
-        {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button> */}
+
       </div>
     </nav>
   );

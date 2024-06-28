@@ -1,0 +1,158 @@
+body.light {
+    background-color: #fff;
+    /* Color de fondo claro */
+    color: #333;
+    /* Color de texto oscuro */
+}
+
+body.light .navbar {
+    background-color: #fff;
+    /* Color de fondo claro para la navbar */
+}
+
+body.light .nav-link {
+    color: #333;
+    /* Color de texto oscuro para los enlaces de la navbar */
+}
+
+body.light .nav-link:hover {
+    color: rgb(97 235 213);
+    /* Color de texto oscuro para los enlaces de la navbar en hover */
+}
+
+body.light .header-content {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    /* color: #fff; */
+    text-align: center;
+    height: 50vh;
+}
+
+body.light #circulo {
+    filter: none;
+}
+
+body.light #circulo2 {
+    filter: none;
+}
+
+body.light #circulo3 {
+    filter: none;
+}
+
+body.light #circulo4 {
+    filter: none;
+}
+
+body.light .cursor {
+    filter: none;
+}
+
+bodu.light .header-background {
+    position: absolute;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgb(203, 121, 248) 0%, rgb(97, 236, 213) 94%);
+    transition: background-position 0.5s ease-in-out;
+}
+
+body.light {
+    background-blend-mode: difference;
+}
+
+body.light .info-producto {
+    color: white;
+    background-color: black;
+}
+
+body.light .item {
+    color: white;
+    background-color: black;
+}
+
+body.light #item {
+    color: white;
+    background-color: black;
+}
+
+
+body.light a {
+    font-weight: 500;
+    color: black;
+    text-decoration: inherit;
+}
+
+body.light a:hover {
+    color: #ff00e7;
+    filter: drop-shadow(4px 6px 12px #ff00e7);
+    transition: 0.5s;
+}
+
+body.light button:hover {
+    border-color: rgb(97 235 213);
+}
+
+body.light .info-producto button {
+    background-color: white;
+    color: black;
+}
+
+body.light .info-producto button:hover {
+    filter: drop-shadow(4px 6px 12px rgb(97 235 213));
+}
+
+body.light .info-producto button:active {
+    color: rgb(97 235 213);
+    background-color: black;
+    border: rgb(97 235 213) 2px solid;
+}
+
+body.light .menulateral{
+    color: black;
+    background-color: white;
+    border: solid 1px black;
+}
+
+body.light .about-txt{
+    color: black;
+    background-color: white;
+    border: solid 1px black;
+}
+
+body.light footer{
+    background-color: white;
+}
+
+body.light .social-icon{
+    color:#ff00e7;
+}
+
+body.light .navbar-brand{
+    color: rgb(97 235 213);
+}
+
+body.light .btn-1{
+background-color: black;
+color: white;
+}
+
+body.light .themeButton{
+    text-wrap: nowrap;
+    text-align: center;
+  font-size: 0.75rem;
+    background-position: center;
+    color: white;
+    border-radius: 50%;
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-image: url(/public/lighttheme.gif);
+}
