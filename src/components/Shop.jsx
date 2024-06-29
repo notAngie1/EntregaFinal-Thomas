@@ -81,7 +81,7 @@ const Shop = () => {
                                                                 <div className="item">
                                                                     <div><img src={element.imagen} alt={element.nombre} /></div>
                                                                     <div className="info-producto">{element.nombre} ${element.precio}
-                                                                        <button className="botonComprar" data-id="1">Comprar</button></div>
+                                                                        <button className="botonComprar" data-id="1">Ver detalles</button></div>
                                                                 </div>
                                                             </div>
                                                         </Link>
@@ -106,7 +106,7 @@ const Shop = () => {
                                                                 <div className="item">
                                                                     <div><img src={element.imagen} alt={element.nombre} /></div>
                                                                     <div className="info-producto"> {element.nombre} ${element.precio}
-                                                                        <button className="botonComprar" data-id="1"> Comprar </button></div>
+                                                                        <button className="botonComprar" data-id="1"> Ver detalles </button></div>
                                                                 </div>
                                                             </div>
                                                         </Link>
@@ -131,7 +131,7 @@ const Shop = () => {
                                                                 <div className="item">
                                                                     <div><img src={element.imagen} alt={element.nombre} /></div>
                                                                     <div className="info-producto"> {element.nombre} ${element.precio}
-                                                                        <button className="botonComprar" data-id="1"> Comprar </button></div>
+                                                                        <button className="botonComprar" data-id="1"> Ver detalles </button></div>
                                                                 </div>
                                                             </div>
                                                         </Link>
@@ -153,7 +153,7 @@ const Shop = () => {
                                                                 <div className="item">
                                                                     <div><img src={element.imagen} alt={element.nombre} /></div>
                                                                     <div className="info-producto"> {element.nombre} ${element.precio}
-                                                                        <button className="botonComprar" data-id="1"> Comprar </button></div>
+                                                                        <button className="botonComprar" data-id="1"> Ver detalles </button></div>
                                                                 </div>
                                                             </div>
                                                         </Link>

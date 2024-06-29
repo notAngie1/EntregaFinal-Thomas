@@ -86,6 +86,10 @@ body.light a {
     text-decoration: inherit;
 }
 
+body.light .linkA{
+    color: white;
+}
+
 body.light a:hover {
     color: #ff00e7;
     filter: drop-shadow(4px 6px 12px #ff00e7);
@@ -155,4 +159,34 @@ body.light .themeButton{
     height: 60px;
     background-repeat: no-repeat;
     background-image: url(/public/lighttheme.gif);
+}
+
+body.light .cart{
+    border-radius: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    text-align: center;
+    height: 50vh;
+    padding: 30px;
+    gap: 20px;
+}
+
+body.light .cart button{
+background-color: white;
+color: black;
+}
+
+body.light .cart button:hover {
+    filter: drop-shadow(4px 6px 12px rgb(97 235 213));
+}
+
+body.light .cart button:active {
+    color: rgb(97 235 213);
+    background-color: black;
+    border: rgb(97 235 213) 2px solid;
 }

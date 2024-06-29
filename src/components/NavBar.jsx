@@ -33,7 +33,7 @@ const NavBar = () => {
           </ul>
         </div>
         <button className='carritoButton'>
-          <span className='carritoIcon'></span>
+          <Link to="/cart" className='carritoIcon'></Link>
         </button>
 
       </div>

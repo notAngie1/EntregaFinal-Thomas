@@ -9,24 +9,29 @@ import Error from './components/Error';
 import Rules from './components/Rules';
 import Footer from './components/Footer';
 import { ThemeProvider } from './contexts/ThemeContext';
+import Cart from './components/Cart';
+import { CartProvider } from './contexts/CartContext';
 
 function App() {
 
   return (
     <ThemeProvider>
-    <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/rules" element={<Rules />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path='/productos' element={<Productos />} />
-        <Route path='/producto/:id' element={<Producto />} />
-        <Route path='/*' element={<Error />} />
-      </Routes>
-      <Footer/>
-    </BrowserRouter>
+      <CartProvider>
+        <BrowserRouter>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path='/*' element={<Error />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/rules" element={<Rules />} />
+            <Route path="/shop" element={<Shop />} />
+            <Route path='/productos' element={<Productos />} />
+            <Route path='/producto/:id' element={<Producto />} />
+            <Route path='/cart' element={<Cart />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </CartProvider>
     </ThemeProvider>
   )
 }
